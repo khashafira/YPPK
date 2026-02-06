@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pelatihan Teknis Kearsipan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <script>
+  const params = new URLSearchParams(window.location.search);
+  const programKey = params.get("program");
+
+  const data = programData[programKey];
+
+  if (data) {
+    document.querySelector("h1").innerText = data.title;
+    document.querySelector(".subtitle").innerText = data.subtitle;
+    document.querySelector(".program-image img").src = data.image;
+    document.querySelector(".price-old").innerText = "Rp " + data.priceOld;
+    document.querySelector(".price-new").innerText = "Rp " + data.priceNew;
+  }
+</script>
+
+<section class="program-detail">
+  <div class="container">
+
+    <!-- HEADER -->
+    <div class="program-hero">
+
+  <div class="program-header">
+    <h1>Pelatihan Teknis Kearsipan</h1>
+    <p class="subtitle"> Program peningkatan kompetensi arsiparis sesuai standar nasional </p>
+  </div>
+
+  <div class="program-image">
+    <img src="assets/images/P1.png" alt="Pelatihan Teknis Kearsipan">
+  </div>
+
+    <!-- CONTENT -->
+    <div class="program-content">
+
+      <div class="program-text">
+
+  <!-- INTRO CARD -->
+  <div class="content-card intro">
+    <h2>Tentang Program</h2>
+    <p>
+      Pelatihan ini dirancang untuk meningkatkan pemahaman dan keterampilan
+      dalam pengelolaan arsip dinamis dan statis sesuai regulasi nasional.
+      Peserta akan dibekali teori serta praktik yang aplikatif.
+    </p>
+  </div>
+
+  <!-- LEARNING -->
+  <div class="content-card">
+    <h2>Apa yang Akan Dipelajari?</h2>
+    <ul class="icon-list">
+      <li><i class="fa-solid fa-folder-open"></i> Manajemen arsip dinamis & statis</li>
+      <li><i class="fa-solid fa-list-check"></i> Penyusunan klasifikasi arsip</li>
+      <li><i class="fa-solid fa-scale-balanced"></i> Standar kearsipan nasional</li>
+      <li><i class="fa-solid fa-chalkboard-user"></i> Studi kasus & praktik langsung</li>
+    </ul>
+  </div>
+
+  <!-- BENEFITS -->
+  <div class="content-card highlight">
+    <h2>Keunggulan Program</h2>
+    <ul class="icon-list">
+      <li><i class="fa-solid fa-user-tie"></i> Instruktur berpengalaman</li>
+      <li><i class="fa-solid fa-layer-group"></i> Materi aplikatif</li>
+      <li><i class="fa-solid fa-certificate"></i> Sertifikat pelatihan</li>
+      <li><i class="fa-solid fa-building"></i> Fleksibel untuk instansi</li>
+    </ul>
+  </div>
+
+      <!-- PRICING -->
+      <div class="pricing-box">
+        <span class="badge-discount">Diskon 30%</span>
+
+        <p class="price-old">Rp 2.100.000</p>
+        <p class="price-new">Rp 1.500.000</p>
+        <p class="price-note">per peserta</p>
+
+        <a href="https://wa.me/6281574446612" class="btn-primary">
+          Daftar Sekarang
+        </a>
+
+        <p class="note"></p>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+</html>
