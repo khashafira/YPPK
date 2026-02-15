@@ -891,6 +891,86 @@
   opacity: 0.7;
 }
 
+
+/* ===== ARTICLE DETAIL ===== */
+.article-detail{
+  padding:100px 0;
+}
+
+.article-title{
+  font-size:38px;
+  font-weight:700;
+  color:#0f2a44;
+  margin-bottom:14px;
+}
+
+.article-meta{
+  color:#64748b;
+  margin-bottom:40px;
+}
+
+.article-content{
+  max-width:760px;
+  line-height:1.9;
+  color:#374151;
+  font-size:16px;
+  margin-bottom:60px;
+}
+
+.speaker-gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:28px;
+  margin-bottom:70px;
+}
+
+.speaker-card{
+  text-align:center;
+}
+
+.speaker-card img{
+  width:100%;
+  height:240px;
+  object-fit:cover;
+  border-radius:18px;
+  margin-bottom:12px;
+}
+
+.speaker-card h4{
+  font-size:16px;
+  color:#0f2a44;
+  margin-bottom:4px;
+}
+
+.speaker-card span{
+  font-size:13px;
+  color:#6b7280;
+}
+
+.gallery-title{
+  text-align:center;
+  font-size:28px;
+  margin-bottom:36px;
+}
+
+.activity-gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:18px;
+}
+
+.activity-gallery img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  border-radius:16px;
+  transition:.3s;
+}
+
+.activity-gallery img:hover{
+  transform:scale(1.04);
+}
+
 /* ==== AKREDITASI ==== */
 .accreditation{
   background: linear-gradient(135deg,#0f2a44,#163d63);
