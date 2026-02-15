@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Detail Artikel</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+
+<body>
+
+     <header class="navbar">
+        <div class="nav-left">
+            <img src="assets/images/YPPK.png" alt="YPPK Logo" class="nav-logo">
+        </div>
+
+        <nav class="nav-center" id="nav-menu">
+            <a href="#beranda" class="nav-link"> Beranda </a>
+            <a href="#program" class="nav-link"> Program </a>
+            <a href="#artikel" class="nav-link"> Artikel </a>
+            <a href="#tentang" class="nav-link"> Tentang Kami </a>
+            <a href="#kontak" class="nav-link"> Kontak</a>
+
+            <div class="lang-toggle mobile-only"> ID 
+                <div class="lang-list" id="langList">
+                <span>ID</span>
+                <span>EN</span>
+              </div>
+            </div>
+        </nav>
+
+        <div class="nav-right">
+            <div class="lang-toggle desktop only"> ID
+            <div class="lang-list" id="langList">
+                <span>ID</span>
+                <span>EN</span>
+             </div>
+            </div>
+          </div>
+
+        <div class="hamburger" id="hamburger"> ☰ </div>
+     </header>
+
+     <script>
+       const hamburger = document.getElementById("hamburger");
+       const navMenu = document.getElementById("nav-menu");
+
+       hamburger.addEventListener("click", () => {
+       navMenu.classList.toggle("active");
+       });
+
+      document.querySelectorAll(".lang-toggle").forEach(toggle => {
+      toggle.addEventListener("click", (e) => {
+      e.stopPropagation();
+
+      document.querySelectorAll(".lang-toggle")
+        .forEach(t => t !== toggle && t.classList.remove("active"));
+
+      toggle.classList.toggle("active");
+    });
+   });
+
+       document.addEventListener("click", () => {
+       document.querySelectorAll(".lang-toggle")
+      .forEach(t => t.classList.remove("active"));
+      });
+     </script>
+
+<!-- ===== ARTICLE DETAIL ===== -->
+<section class="article-detail">
+<div class="container">
+
+<a href="index.html#artikel" class="back-btn">
+<i class="fa-solid fa-arrow-left"></i> Kembali ke Artikel
+</a>
+
+<h1 class="article-title">
+Bimbingan Teknis Preservasi Arsip PT. PGN Mas Bersama YPPK
+</h1>
+
+<p class="article-meta">
+9–11 Oktober • Hotel Grand Tebu Bandung
+</p>
+
+<div class="article-content">
+
+<p>
+Dalam upaya meningkatkan keahlian dan profesionalisme sumber daya manusia PT Permata Graha Nusantara (PT. PGN Mas) di bidang kearsipan yang kedua kalinya bekerja sama dengan Yayasan Pendidikan dan Pelatihan Kearsipan (YPPK) mengadakan bimbingan teknis kearsipan mengenai Preservasi Arsip tanggal 9-11 Oktober di Hotel Grand Tebu Bandung, Jl. R.E. Martadinata No. 207, Bandung.
+</p>
+
+<p>
+Dalam rangka mengupayakan pencapaian untuk menciptakan sumber daya manusia kearsipan yang profesional tersebut YPPK sebagai penyelenggara dan bertanggung jawab atas kelancaran bimbingan tersebut bekerja sama dengan Arsip Nasional Republik Indonesia (ANRI) dan Asosiasi Arsiparis Indonesia (AAI) memberikan pendidikan dan praktek tentang Preservasi Arsip kepada 34 peserta dari PT. PGN Mas dengan metoda 30% teori dan 70% praktek.
+</p>
+
+<p>
+Selama kegiatan kami dokumentasikan dalam foto kegiatan sebagai berikut.
+</p>
+
+</div>
+
+<div class="speaker-gallery">
+
+<div class="speaker-card">
+<img src="assets/images/S1.png">
+<h4>Bapak Dr. M. Taufik, M.Si</h4>
+<span>(Plt. Kepala Arsip Nasional Republik Indonesia)</span>
+</div>
+
+<div class="speaker-card">
+<img src="assets/images/S2.png">
+<h4>Bapak Dr. Kandar, MAP</h4>
+<span>(Direktur Preservasi)</span>
+</div>
+
+<div class="speaker-card">
+<img src="assets/images/S3.png">
+<h4>Ibu Yanah Suryanah, DIPL, KIM</h4>
+<span>(Kepala Subdirektorat Laboratorium dan Autentikasi Arsip)</span>
+</div>
+
+<div class="speaker-card">
+<img src="assets/images/S4.png">
+<h4>Bapak Drs. Anak Agung Gede Sumardika</h4>
+<span>(Kepala Subdirektorat Restorasi Arsip)</span>
+</div>
+
+</div>
+
+<h2 class="gallery-title">Dokumentasi Kegiatan</h2>
+
+<div class="activity-gallery">
+
+<img src="assets/images/P4.jpg">
+<img src="assets/images/P5.jpg">
+<img src="assets/images/P6.jpg">
+<img src="assets/images/p33.jpg">
+<img src="assets/images/P2.png">
+
+</div>
+
+</div>
+</section>
+
+</body>
+</html>
