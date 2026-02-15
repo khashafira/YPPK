@@ -909,11 +909,12 @@
 }
 
 .article-content{
-  max-width:760px;
+  width:100%;
   line-height:1.9;
   color:#374151;
   font-size:16px;
   margin-bottom:60px;
+  text-align:justify;
 }
 
 .speaker-gallery{
